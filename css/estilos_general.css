@@ -1,0 +1,123 @@
+/*
+==============================
+PANEL DE NAVEGACION SUPERIOR
+==============================
+*/
+
+#nav_superior_contacto_numeros a {
+    color: white;
+    font-weight: bold;
+}
+
+
+#icono-whatsapp {
+    color: #25D366;
+}
+
+.uk-navbar-nav>li>a,
+.uk-navbar-item,
+.uk-navbar-toggle {
+    min-height: 0px;
+}
+
+#header {
+    background-color: #040e1a;
+    padding: 25px;
+    transition: height 0.3s, padding 0.3s linear;
+
+    &.small {
+        height: 46px;
+        padding: 10px;
+    }
+}
+
+#header {
+    ul.uk-navbar-nav>li>a {
+        transition: min-height 0.3s;
+    }
+
+    /* transform-origin: ; */
+    a.uk-logo {
+        #logo {
+            transform: scale(1) translateY(25px);
+            transition: transform 0.3s;
+        }
+    }
+
+
+    &.small {
+        ul.uk-navbar-nav>li>a {
+            min-height: 50px;
+            transition: min-height 0.3s;
+        }
+
+        a.uk-logo {
+            #logo {
+                transform: scale(4) translateY(3px);
+                transition: transform 0.3s;
+            }
+
+        }
+
+    }
+}
+
+/*
+==============================
+PANEL DE NAVEGACION MOBILE
+==============================
+*/
+#link-navbar-mobile {
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#contenedor_links_mobile {
+    background-color: #040e1a;
+}
+
+#contenedor_links_mobile .uk-button-primary {
+    background-color: #FF6D33;
+    color: white;
+    font-weight: 500;
+    border: none;
+}
+
+
+
+/*
+==============================
+PIE PAGINA
+==============================
+*/
+#piepagina {
+    background-color: #040e1a;
+}
+
+#piepagina .icono-social-footer {
+    background-color: #f4f4f4;
+}
+
+/*
+==============================
+BOTONERA
+==============================
+*/
+.uk-button {
+    transition: all 0.2s ease-in-out;
+    color: #ffffff;
+    background-color: #FF6D33;
+    border: 1px solid #FF6D33;
+}
+
+.uk-button:hover {
+    transform: scale(1.04);
+    background-color: #FF6D33;
+    color: #ffffff;
+    border-color: transparent;
+}
+
+.uk-button-text:before {
+    border-bottom: 1px solid #FF6D33;
+}
