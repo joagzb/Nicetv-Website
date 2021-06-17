@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<title>NiceTV - Televisión satelital</title>
+		<meta name="description"
+			  content="Operadora de TV Satelital de Argentina de menor costo y mayor calidad">
+		<meta name="author" content="Gonzalez Budiño Joaquin" />
+		<meta name="copyright" content="Amacom Media S.R.L" />
+
+		<!-- ICONOS WEB -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/logos/apple-icon-57x57.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/logos/apple-icon-57x57.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./assets/logos/apple-icon-57x57.png">
+		<link rel="shortcut icon" href="./assets/images/apple-icon-57x57.png">
+
+		<!-- UIkit CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+
+		<!-- UIkit JS -->
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+
+		<script>
+			document.getElementsByTagName("html")[0].className += " js";
+
+		</script>
+
+		<!-- ESTILOS -->
+		<link rel="stylesheet" href="./css/estilos_faq.css">
+		<link rel=stylesheet href="./css/estilos_general.css" type="text/css">
+		<style>
+			#nav_superior_contacto_numeros .uk-navbar-dropdown a {
+				color: black;
+			}
+
+			a:hover {
+				color: orange;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<!-- PANEL DE NAV. SUPERIOR 1-->
+		<header id="header" class="uk-navbar-container" uk-navbar
+				uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
+			<div class="uk-navbar-left">
+				<a class="uk-navbar-item uk-logo uk-margin-auto-vertical" href="./index.html">
+					<img alt="" src="./assets/logos/nice_logo.png"
+						 style="width:100px;">
+				</a>
+				<a href="#offcanvas-nav-primary" uk-toggle class="uk-navbar-toggle uk-hidden@l" href="#">
+					<span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+				</a>
+			</div>
+			<div class="uk-navbar-right">
+				<ul id="nav_superior_contacto_numeros" class="uk-navbar-nav uk-visible@l">
+					<li>
+						<a target="_blank"
+						   href="https://api.whatsapp.com/send?phone=541138336858">
+							<span id="icono-whatsapp" class="uk-icon uk-margin-small-right"
+								  uk-icon="icon: whatsapp"></span>
+							11-3833-6858
+						</a>
+					</li>
+					<li>
+						<a target="_blank"
+						   href="https://api.whatsapp.com/send?phone=541127667680">
+							<span id="icono-whatsapp" class="uk-icon uk-margin-small-right"
+								  uk-icon="icon: whatsapp"></span>
+							11-2766-7680
+						</a>
+					</li>
+				</ul>
+				<div class="uk-navbar-item uk-visible@l">
+					<a href="contacto.html" class="uk-button uk-button-default uk-box-shadow-medium">Contrata
+						Ya!</a>
+				</div>
+
+			</div>
+
+		</header>
+		<!-- FIN PANEL DE NAV. SUPERIOR 1-->
+
+		<!-- PANEL DE NAV. SUPERIOR 2-->
+		<header class="uk-visible@l">
+			<nav id="navbar_top" class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-center">
+					<ul class="uk-navbar-nav uk-visible@l">
+						<li>
+							<a id="link-navbar-top" class="uk-button-text"
+							   href="./index.html#seccion-precios">
+								Paquetes
+							</a>
+						</li>
+						<li>
+							<a id="link-navbar-top" class="uk-button-text"
+							   href="./index.html#seccion-beneficios">
+								Beneficios
+							</a>
+						</li>
+						<li>
+							<a href="#">Soporte & Servicio</a>
+							<div class="uk-navbar-dropdown">
+								<ul class="uk-nav uk-navbar-dropdown-nav">
+									<li><a class="uk-button-text" href="#modalReferenciaPago" uk-toggle>Mi Código de
+											pago</a></li>
+									<li><a class="uk-button-text" href="#modalPagos" uk-toggle>Dónde pagar</a>
+									</li>
+									<li><a class="uk-button-text" href="#">Dudas más Frecuentes</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a class="uk-button-text" href="./index.html#seccion-beneficios"
+							   onclick="changeBenefitsTab()"
+							   id="link-navbar-top">
+								Quienes Somos
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- FIN PANEL DE NAV. SUPERIOR 2-->
+
+		<!-- PANEL DE NAV. SUPERIOR MOBILE -->
+		<div id="offcanvas-nav-primary" uk-offcanvas="mode: push; overlay: true">
+			<div id="contenedor_links_mobile" class="uk-offcanvas-bar uk-flex uk-flex-column" style="overflow-y: auto;">
+				<div class="uk-navbar-item uk-nav-center">
+					<a href="./contacto.html" class="uk-button uk-button-primary">Contrata
+						Ya!</a>
+				</div>
+
+				<ul class="uk-nav uk-nav-default uk-nav-center uk-margin-auto-vertical uk-list">
+					<li class="uk-nav-divider"></li>
+					<li>
+						<a id="link-navbar-mobile" href="./index.html#seccion-precios">
+							Paquetes
+						</a>
+					</li>
+					<li>
+						<a id="link-navbar-mobile" href="./index.html#seccion-beneficios">
+							Beneficios
+						</a>
+					</li>
+					<li>
+						<a id="link-navbar-mobile" href="#modalReferenciaPago" uk-toggle>
+							Mi código de pago
+						</a>
+					</li>
+					<li>
+						<a id="link-navbar-mobile" href="#modalPagos" uk-toggle>
+							Donde Pagar
+						</a>
+					</li>
+					<li>
+						<a id="link-navbar-mobile" href="./faq.html">
+							Dudas frencuentes
+						</a>
+					</li>
+					<li>
+						<a id="link-navbar-mobile" onclick="changeBenefitsTab()" href="./index.html#seccion-beneficios">
+							Quienes somos
+						</a>
+					</li>
+					<br>
+					<li class="uk-nav-divider"></li>
+				</ul>
+
+				<ul class="uk-list uk-nav-center uk-margin-auto-vertical">
+					<li><a href="https://api.whatsapp.com/send?phone=541138336858"><span
+								  class="link-navbar-mobile uk-icon uk-margin-small-right"
+								  uk-icon="icon: receiver"></span>11-3833-6858</a></li>
+					<br>
+					<li><a href="https://api.whatsapp.com/send?phone=541127667680"><span
+								  class="uk-icon uk-margin-small-right"
+								  uk-icon="icon: receiver"></span>11-2766-7680</a></li>
+					<br>
+				</ul>
+			</div>
+		</div>
+		<!-- FIN PANEL DE NAV. SUPERIOR MOBILE -->
+
+
+		<!-- banner de titulo de seccion -->
+		<section class="cd-header flex flex-column flex-center" style="background-color: #FF6D33;">
+			<div class="text-component text-center">
+				<h1 style="color: white;">Dudas más frecuentes</h1>
+				<h4 style="color: white; font-style: italic;">Encuentre respuestas sobre las preguntas que más nos hacen
+					nuestros usuarios</h4>
+			</div>
+		</section>
+		<!-- FIN banner de titulo de seccion -->
+
+		<!-- SECCION DE PREGUNTAS -->
+		<section class="cd-faq js-cd-faq container max-width-md margin-top-lg">
+			<ul class="cd-faq__categories">
+				<li><a class="cd-faq__category cd-faq__category-selected truncate"
+					   href="#dudas_costos_generales">Costos</a></li>
+				<li><a class="cd-faq__category truncate" href="#dudas_adquisicion">Adquisición
+						del
+						servicio</a></li>
+				<li><a class="cd-faq__category truncate" href="#dudas_servicio">Servicio</a></li>
+				<li><a class="cd-faq__category truncate" href="#dudas_pagos">Pagos</a></li>
+				<li><a class="cd-faq__category truncate" href="#dudas_problemas">Problemas con el servicio</a></li>
+				<li><a class="cd-faq__category truncate" href="#dudas_bajas">Bajas</a></li>
+			</ul> <!-- cd-faq__categories -->
+
+			<div class="cd-faq__items">
+				<ul id="dudas_costos_generales" class="cd-faq__group">
+					<li class="cd-faq__title">
+						<h2>Costos generales</h2>
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>¿Tiene algún costo la llamada a los números de
+								contacto?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>No. Nuestros números comerciales no suponen costos de llamada a los clientes.
+									Además, usted puede hablarnos a través de Whatsapp mediante mensajes de texto o
+									audio</p>
+								<p>
+									Comuníquese con nuestro centro de atención al cliente: <a
+									   href="https://api.whatsapp.com/send?phone=541138336858">11-3833-6858</a> o <a
+									   href="https://api.whatsapp.com/send?phone=541127667680">11-2766-7680</a>
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>¿Cuál es el costo de pedir un servicio técnico a mi
+								domicilio?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>
+									Cualquier servicio técnico a domicilio tiene un costo fijo. Si usted solicita un
+									servicio técnico a domicilio por cualquier motivo, o bien se trata de un cambio de
+									domicilio, debe abonar un monto fijo.
+								</p>
+								<p>
+									La mayoría de las veces los problemas pueden ser resueltos siguiendo las guías
+									propuestas en ésta página o solicitando asistencia a nuestro centro de atención al
+									cliente.
+								</p>
+								<p>
+									Comuníquese con nuestro centro de atención al cliente: <a
+									   href="https://api.whatsapp.com/send?phone=541138336858">11-3833-6858</a> o <a
+									   href="https://api.whatsapp.com/send?phone=541127667680">11-2766-7680</a>
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+				</ul>
+
+				<ul id="dudas_adquisicion" class="cd-faq__group">
+					<li class="cd-faq__title">
+						<h2>Adquisición de servicio</h2>
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#1"><span>¿Cómo solicito el alta del servicio?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Comuníquese con nuestro centro de atención al cliente: <a
+									   href="https://api.whatsapp.com/send?phone=541138336858">11-3833-6858</a> o <a
+									   href="https://api.whatsapp.com/send?phone=541127667680">11-2766-7680</a>
+								</p>
+								<p>Para solicitar el alta, debe proporcionar datos básicos personales de quién será el
+									titular del servicio:</p>
+								<ul>
+									<li>Nombre completo</li>
+									<li>DNI</li>
+									<li>email</li>
+									<li>Teléfono</li>
+									<li>Domicilio</li>
+									<li>Paquete de servicio deseado</li>
+								</ul>
+								<p>Luego, se elevará un servicio técnico para la instalación de los equipos en algún
+									horario que usted se encuentre disponible</p>
+
+								<h4>De forma presencial</h4>
+								<p>Visite alguna de nuestras oficinas comerciales HABILITADAS:</p>
+								<ul>
+									<li>San Martin 1143 - Formosa</li>
+									<li>Sarmiento 737 - Formosa</li>
+									<li>Av. Nestor Kirchner 4900 - Formosa</li>
+									<li>Av. Maradona 1773 - Formosa</li>
+									<li>Av. Senador Tomas 2553 - Formosa</li>
+									<li>Av. San Martin 941 - Clorinda</li>
+								</ul>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>¿Los equipos que me instalan pasan a ser de mi
+								propiedad?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>No. Los equipos se reciben como PRESTACIÓN del servicio y son propiedad de la
+									empresa. Los equipos, su utilización y plazo de permanencia se encuentran declarados
+									en el contrato de adhesión al servicio. Ante cualquier duda, consulte su contrato.
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+				</ul> <!-- cd-faq__group -->
+
+				<ul id="dudas_servicio" class="cd-faq__group">
+					<li class="cd-faq__title">
+						<h2>Servicio</h2>
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#modalReferenciaPago" uk-toggle><span>¿Cuál es mi código de
+								referencia de cliente?</span></a>
+					</li>
+
+
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>¿Cómo solicito un cambio de plan?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Comuníquese con nuestro centro de atención al cliente: <a
+									   href="https://api.whatsapp.com/send?phone=541138336858">11-3833-6858</a> o <a
+									   href="https://api.whatsapp.com/send?phone=541127667680">11-2766-7680</a>
+								</p>
+								<p>
+									Solicite el cambio de su plan. Para ello, debe proporcionar los siguientes DATOS DEL
+									TITULAR DEL SERVICIO:
+								<ul>
+									<li>Nombre y apellido</li>
+									<li>DNI</li>
+									<li>Email</li>
+									<li>Nuevo paquete de interés</li>
+								</ul>
+								</p>
+								<p>Si usted desea agregar el paquete de canales premium, siga las instrucciones en la
+									pregunta que figura abajo, continuación de ésta.</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>¿Cómo solicitar el paquete premium?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Comuníquese con nuestro centro de atención al cliente: <a
+									   href="https://api.whatsapp.com/send?phone=541138336858">11-3833-6858</a> o <a
+									   href="https://api.whatsapp.com/send?phone=541127667680">11-2766-7680</a>
+								</p>
+								<p>
+									Solicite el alta del servicio premium. Para ello, debe proporcionar los siguientes
+									datos DEL TITULAR DEL SERVICIO:
+								<ul>
+									<li>Nombre y apellido</li>
+									<li>DNI</li>
+									<li>Email</li>
+									<li>contraseña para el acceso a canales adultos</li>
+								</ul>
+								</p>
+								<h4>Precauciones por los canales adultos</h4>
+								<p>
+									El pack premium contiene canales adultos. Usted debe informar una contraseña de
+									acceso para que cada vez que ingrese a un canal de contenido adulto como medida de
+									protección infantil.
+								</p>
+								<p>Posteriormente, si lo desea, usted puede cambiar la contraseña de acceso</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>¿Cómo solicito un cambio de domicilio?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Comuníquese con nuestro centro de atención al cliente: <a
+									   href="https://api.whatsapp.com/send?phone=541138336858">11-3833-6858</a> o <a
+									   href="https://api.whatsapp.com/send?phone=541127667680">11-2766-7680</a>
+								</p>
+								<p>
+									Debe proporcionar los siguientes datos DEL TITULAR DEL SERVICIO:
+								<ul>
+									<li>Nombre y apellido</li>
+									<li>DNI</li>
+									<li>domicilio actual</li>
+									<li>nuevo domicilio donde desea mover la antena</li>
+								</ul>
+								</p>
+								<p>
+									<bold>Aviso:</bold> recuerde que ante ninguna ocación debe manipular la antena por
+									cuenta propia, debido a que se deben realizar determinadas operaciones técnicas para
+									el correcto funcionamiento del servicio. Manipular los equipos por su propia cuenta
+									causará la inhabilitación del servicio por falta de configuraciones.
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+				</ul> <!-- cd-faq__group -->
+
+				<ul id="dudas_pagos" class="cd-faq__group">
+					<li class="cd-faq__title">
+						<h2>Pagos</h2>
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#modalPagos" uk-toggle><span>¿Cuáles son los métodos de
+								pago?</span></a>
+						<div class="cd-faq__content">
+						</div> <!-- cd-faq__content -->
+					</li>
+
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>¿Puedo pagar sin salir de casa?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Por supuesto. Las opciones son MercadoPago y Tarjetas de Débito o Crédito</p>
+								<p>Para ello, dirigirse al sitio: <a href="www.pagos.nicetv.com.ar"
+									   target="_blank">www.pagos.nicetv.com.ar</a></p>
+								<p>
+									En la esquina superior izquierda del sitio,al lado del logo, encontrará una pestaña
+									llamada "tutorial". En la misma encontrará una guía con instrucciones de como
+									utilizar la plataforma.
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>¿Cómo me adhiero al débito automático?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<h4>Método 1:</h4>
+								<p>Debe completar un formulario de adhesión al Débito Automático con tarjeta de
+									crédito en alguna de nuestras oficinas comerciales.</p>
+								<ul>
+									<li>San Martin 1143 - Formosa</li>
+									<li>Sarmiento 737 - Formosa</li>
+									<li>Av. Nestor Kirchner 4900 - Formosa</li>
+									<li>Av. Maradona 1773 - Formosa</li>
+									<li>Av. Senador Tomas 2553 - Formosa</li>
+									<li>Av. San Martin 941 - Clorinda</li>
+								</ul>
+								<h4>Método 2:</h4>
+								<p>También puede adherirse al Débito Automático a través del servicio de
+									MercadoPago.</p>
+								<p><span class="uk-text-small uk-text-italic"> Solicitar asistencia al servicio
+										de atención al cliente al teléfono 11-2766-7680 </span></p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+
+				</ul> <!-- cd-faq__group -->
+
+				<ul id="dudas_problemas" class="cd-faq__group">
+					<li class="cd-faq__title">
+						<h2>PROBLEMAS CON EL SERVICIO</h2>
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>¿Con quién me comunico si tengo algún
+								inconveniente?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Con nuestro centro de atención al cliente: </p>
+								<ul>
+									<li> <a href="https://api.whatsapp.com/send?phone=541138336858">11-3833-6858</a>
+									</li>
+									<li><a href="https://api.whatsapp.com/send?phone=541127667680"> 11-2766-7680</a>
+									</li>
+								</ul>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>Me sale el mensaje "no programa"</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Siga los siguientes pasos:</p>
+								<H4>Método 1</H4>
+								<ol>
+									<li>Presione el botón amarillo F3 del control remoto</li>
+									<li>Sale un mensaje que dice "borrar todos los canales"</li>
+									<li>Click en ok</li>
+									<li>Verá como se inicia un proceso de búsqueda o escaneo</li>
+									<li>Al finalizar el proceso de escaneo, presione el botón "OK" para ir al menú de
+										canales</li>
+									<li>Verifique que se visualizan los canales pagos</li>
+								</ol>
+								<H4>Método 2</H4>
+								<p><em>En caso de seguir teniendo problemas con su servicio, envíe una BUENA foto de la
+										pantalla del televisor donde se pueda ver su inconveniete al número que figura
+										en la cabecera de ésta página</em></p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>La pantalla queda en "bienvenido"</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Presione 2 VECES la tecla "exit" de control remoto de NICETV</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>Faltan canales en la guilla</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Siga los siguientes pasos:</p>
+								<ol>
+									<li>Presione el botón boton amarillo F3 del control remoto.</li>
+									<li>Sale un mensaje que dice "borrar todos los canales"</li>
+									<li>Click en ok</li>
+									<li>Verá como se inicia un proceso de búsqueda o escaneo</li>
+									<li>Al finalizar el proceso de escaneo, presione el botón "OK" para ir al menú de
+										canales</li>
+									<li>Verifique que se visualizan los canales pagos</li>
+								</ol>
+								<p><em>En caso de seguir teniendo problemas con su servicio, envíe una BUENA foto de la
+										pantalla del televisor donde se pueda ver su inconveniete al número que figura
+										en la cabecera de ésta página</em></p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>No se ven/no se muestran algunos/todos los canales
+							</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Esto puede deberse por alguno de los siguientes motivos:</p>
+								<ul>
+									<li>Su decodificador está apagado. Enciéndalo y verifique que se prenden las luces
+									</li>
+									<li>Compruebe que la fuente de video del TV se encuentra en HDMI. Para esto, los
+										controles remotos de los televisores traen consigo un boton que dice
+										"src","source","fuente","input" con el cual usted puede cambiar la fuente de
+										video del TV en sus distintas entradas</li>
+									<li>Su servicio está cortado por deudas. Comuníquese con nosotros para solucionar
+										este inconveniente.</li>
+								</ul>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>Los canales se ven pixelados o con
+								interferencia</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<h4>Motivo 1:</h4>
+								<p>Siga los siguientes pasos:</p>
+								<ol>
+									<li>
+										<div>
+											Las conexiones al decodificador deben estar como se muestra en la foto:
+											<img src="./assets/images/conexion_deco2.JPG"
+												 alt="foto conexiones decodificador">
+											<img src="./assets/images/conexion_deco1.JPG"
+												 alt="foto conexiones decodificador">
+										</div>
+									</li>
+									<li>verifique que las conexiones al decodificador están bien conectadas</li>
+									<li>verifique que las conexiones al TV estan bien</li>
+									<li>Compruebe que la fuente de video del TV se encuentra en HDMI. Para esto, los
+										controles remotos de los televisores traen consigo un boton que dice
+										"src","source","fuente","input" con el cual usted puede cambiar la fuente de
+										video del TV en sus distintas entradas</li>
+								</ol>
+								<h4>Motivo 2:</h4>
+								<p>Su problema puede deberse a interferencias solares breves que ocurren en determinados
+									horarios del dia (10:00hs a 13:00hs). Este tipo de interferencia causa distorsiones
+									o pérdidas de señal por periodos de 15 minutos aproximadamente.</p>
+								<p>Lamentablemente, no tenemos control de este fenómeno, el cuál afecta a todos los
+									servicios afines o parecidos, intrínsecas a servicios satelitales. Durante estos
+									periodos de interferencia <u>apelamos a su paciencia</u></p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>Canal sin sonido</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<h4>Motivo 1:</h4>
+								<p>Siga los siguientes pasos:</p>
+								<ol>
+									<li>
+										<div>
+											Las conexiones al decodificador deben estar como se muestra en la foto:
+											<img src="./assets/images/conexion_deco2.JPG"
+												 alt="foto conexiones decodificador">
+											<img src="./assets/images/conexion_deco1.JPG"
+												 alt="foto conexiones decodificador">
+										</div>
+									</li>
+									<li>verifique que las conexiones al TV están bien</li>
+								</ol>
+								<h4>Motivo 2:</h4>
+								<p>Verifique el volumen de su televisor</p>
+								<h4>Motivo 3:</h4>
+								<p>Lamentablemente, la empresa emisora del canal en cuestión está emitiendo el canal sin
+									sonido. Este tipo de caso es ajeno a nuestros alcances. Simplemente lo invitamos a
+									ver algún otro canal de su agrado mientras espera que el canal vuelva a retransmitir
+									su contenido correctamente.</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>Se escucha una interferencia de Radio</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Siga los siguientes pasos:</p>
+								<ol>
+									<li>Presione el boton rojo F2</li>
+									<li>Luego, con las flechas del control, poner la opción RR</li>
+								</ol>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>El canal Lapacho tiene una interferencia de
+								radio</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Siga los siguientes pasos:</p>
+								<ol>
+									<li>Presione el botón botón amarillo F3 del control remoto</li>
+									<li>Le sale un mensaje que dice "borrar todos los canales"</li>
+									<li>Click en ok</li>
+									<li>Verá como se inicia un proceso de búsqueda o escaneo</li>
+									<li>Al finalizar el proceso de escaneo, presione el botón "OK" para ir al menú de
+										canales</li>
+									<li>Verifique que se visualizan los canales pagos</li>
+									<li>Verifique que Lapacho se escucha correctamente (canal 200)</li>
+								</ol>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+				</ul> <!-- cd-faq__group -->
+				<ul id="dudas_bajas" class="cd-faq__group">
+					<li class="cd-faq__title">
+						<h2>BAJA DEL SERVICIO</h2>
+					</li>
+
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>¿Cómo solicito la baja del servicio?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Sr. Cliente, recuerde que el trámite de baja se hace efectivo el primer día, del mes
+									inmediato
+									posterior a la fecha de solicitud.</p>
+								<p>para DAR DE BAJA EL SERVICIO, el TITULAR DEL
+									SERVICIO debe acercarse a una oficina comercial HABILITADA a los fines de SOLICITAR
+									LA BAJA MEDIANTE NOTA FIRMADA.
+									Asimismo, debe <u>tener su cuenta al día</u> para proceder a realizar dicha
+									solicitud.
+									Debe entregar en el mismo momento el/los equipo/s decodificador/es entregados
+									oportunamente
+									en comodato. Luego de firmar la solicitud, se hará una ORDEN TÉCNICA PARA RETIRAR LA
+									ANTENA
+									EN SU DOMICILIO.
+									La baja es cursada siempre para el mes inmediato posterior.</p>
+
+								<h4>Como proceder si usted se encuentra en el interior</h4>
+								<p>Estos son los pasos que se siguen para la solicitud de la baja del servicio en caso
+									de imposibilidad de asistir personalmente a una oficina comercial HABILITADA</p>
+								<ol>
+									<li>ABONAR EL SALDO PENDIENTE DE LA CUENTA A LA FECHA DE SOLICITUD.</li>
+									<li>REDACTAR NOTA DE “SOLICITUD DE BAJA” (VER MODELO ENVIADO) con firma, aclaración
+										del
+										titular del servicio.</li>
+									<li>Enviar foto de la solicitud de baja a los números de contacto que figuran en la
+										cabecera de ésta página</li>
+									<li>Se suspende facturación y se envía autorización hasta el último día abonado.
+									</li>
+									<li> se genera la orden técnica de retiro de los equipos tan pronto sea posible
+										acercarse a la localidad
+										en cuestión</li>
+								</ol>
+								<cite><span><em>La constancia de su solicitud de baja es el envío por whatsapp de la
+											nota.</em></span></cite>
+
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+				</ul> <!-- cd-faq__group -->
+
+			</div> <!-- cd-faq__items -->
+
+			<a href="#0" class="cd-faq__close-panel text-replace">Close</a>
+			<div class="cd-faq__overlay" aria-hidden="true"></div>
+		</section> <!-- cd-faq -->
+
+
+		<!-- MODAL DONDE PAGAR -->
+		<div id="modalPagos"
+			 class="uk-modal-full"
+			 uk-modal>
+			<div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+				<button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+				<h2 class="uk-modal-title">Medios de pago de NiceTV</h2>
+				<br>
+				<div uk-grid>
+					<div class="uk-width-auto@m">
+						<ul id="tab_modal_dondePagar" class="uk-tab-left"
+							uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+							<li><a id="modal_dondePagar_opcion1" href="#">Online por internet</a></li>
+							<li><a id="modal_dondePagar_opcion2" href="#">Pago Fácil</a></li>
+							<li><a id="modal_dondePagar_opcion3" href="#">Débito Automático</a></li>
+							<li><a id="modal_dondePagar_opcion4" href="#">Nuestras oficinas</a></li>
+						</ul>
+					</div>
+					<div class="uk-width-expand@m">
+						<ul id="component-tab-left" class="uk-switcher">
+							<li>
+								<dl class="uk-description-list">
+									<dt>
+										<h2>Plataforma web</h2>
+									</dt>
+									<dd>
+										<p>Opciones: MercadoPago y Tarjetas de Débito o Crédito</p>
+										<ol>
+											<li><p>Dirigirse al sitio: <a href="www.pagos.nicetv.com.ar"
+												   target="_blank">www.pagos.nicetv.com.ar</a></p></li>
+											<li><p>Ingresa con su cuenta de Facebook, Google o se registra para ingresar
+												con su DNI</p></li>
+											<li><p>Agregue su cuenta ingresando su código de referencia
+												de pago con la opcion "Agregar Cuenta"</p></li>
+										</ol>
+									</dd>
+									<dt>
+										<h2>Pago mis Cuentas</h2>
+									</dt>
+									<dd>
+										<p>Ingresar OPCIÓN BANCO (Empresa NICETV) e ingrese luego su código de
+											referencia
+											de pago.</p>
+
+									</dd>
+								</dl>
+								<span class="uk-text-small uk-text-italic">¿No sabe su código
+									de referencia de pago? <a href="#" onclick="closeModalDondePagar()">Consulte
+										aquí</a></span>
+							</li>
+							<li>
+								<div><p>Cualquier sucursal de pago Fácil esta habilitada y no se cobra ninguna comisión extra
+								</p>
+								<ul  class="uk-list" >
+									<li>1) Dirigirse a cualquier oficina e informe que desea pagar el servicio de
+										televisión NICETV</li>
+									<li>2) Informe al cobrador su código
+										de referencia de pago</li>
+									<li>3) Verifique que el monto a pagar y los datos del titular del servicio sean los
+										correcto. No se cobran comisiones extras</li>
+									<li>4) Una vez que realizó un pago, verifique que los datos de su ticket sean los
+										correctos.</li>
+								</ul>
+								<p><span class="uk-text-small uk-text-italic">¿No sabe su código
+										de referencia de pago? <a href="#" onclick="closeModalDondePagar()">Consulte
+											aquí</a></span></p></div>
+							</li>
+							<li>
+								<ul>
+									<li>Debe completar un formulario de adhesión al Débito Automático con tarjeta de
+										crédito en alguna de nuestras oficinas comerciales. <span><a
+											   class="uk-text-small uk-text-italic"
+											   onclick="changePaymentModalTab(3,'modal_dondePagar_opcion4')"
+											   href="#">Consulte
+												aquí cuáles son nuestras oficinas</a></span>
+									</li>
+									<li>También puede adherirse al Débito Automático a través del servicio de
+										MercadoPago.</li>
+									<p><span class="uk-text-small uk-text-italic"> Solicitar asistencia al servicio
+											de atención al cliente al teléfono 011-27667680 </span></p>
+								</ul>
+							</li>
+							<li>
+								<div>
+									<h5>Puede pagar de forma presencial en cualquiera de nuestras oficinas</h5>
+									<ul class="uk-list uk-list-disc">
+										<li>San Martin 1143 - Formosa</li>
+										<li>Sarmiento 737 - Formosa</li>
+										<li>Av. Nestor Kirchner 4900 - Formosa</li>
+										<li>Av. Maradona 1773 - Formosa</li>
+										<li>Av. Senador Tomas 2553 - Formosa</li>
+										<li>Av. San Martin 941 - Clorinda</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN MODAL DONDE PAGAR -->
+
+		<!-- MODAL MI REFERENCIA DE PAGO -->
+		<div id="modalReferenciaPago"
+			 class="uk-flex-top uk-modal-container"
+			 uk-modal>
+			<div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+				<button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+				<h3 class="uk-modal-title">Solicitar código de referencia de pago</h3>
+				<p  class="uk-margin" >Complete el siguiente formulario con los <u>datos del titular</u> de la cuenta. Se generará un
+					mensaje de WhatsApp que deberá enviar para recibir su código de referencia de pago</p>
+				<form onsubmit="mi_referencia_pago()">
+					<div class="uk-grid uk-margin">
+						<div class="uk-width-1-1@s uk-margin">
+							<label class="input_modalReferencia_nombre" for="form-stacked-text">Nombre y Apellido del
+								titular</label>
+							<div class="uk-form-controls">
+								<input class="uk-input" id="input_modalReferencia_nombre"
+									   name="input_modalReferencia_nombre" type="text" required>
+							</div>
+						</div>
+
+						<div class="uk-width-1-3@s">
+							<label class="input_modalReferencia_dni" for="form-stacked-text">DNI del titular</label>
+							<div class="uk-form-controls">
+								<input class="uk-input" id="input_modalReferencia_dni"
+									   name="input_modalReferencia_dni" type="text" required>
+							</div>
+						</div>
+
+						<div class="uk-width-1-3@s">
+							<label class="input_modalReferencia_email" for="form-stacked-text">Email del titular</label>
+							<div class="uk-form-controls">
+								<input class="uk-input" id="input_modalReferencia_email"
+									   name="input_modalReferencia_email" type="email">
+							</div>
+						</div>
+						<div class="uk-width-1-3@s">
+							<label class="input_modalReferencia_telefono" for="form-stacked-text">teléfono del titular</label>
+							<div class="uk-form-controls">
+								<input class="uk-input" id="input_modalReferencia_telefono"
+									   name="input_modalReferencia_telefono" type="tel">
+							</div>
+						</div>
+					</div>
+					<p class="uk-text-right uk-margin">
+						<button class="uk-button uk-button-text uk-modal-close"
+								style="color: black; background-color: white; border: n: ;one;"
+								type="button">Cancel</button>
+						<button class="uk-button uk-button-primary" type="submit">Consultar</button>
+					</p>
+				</form>
+			</div>
+		</div>
+		<!-- FIN MODAL MI REFERENCIA DE PAGO -->
+
+		<script src="./js/scripts_faq2.js"></script> <!-- util functions included in the CodyHouse framework -->
+		<script src="./js/scripts_faq1.js"></script>
+		<script src="./js/scripts_generales.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,220 @@
+/*
+==============================
+BANNER
+==============================
+*/
+.img_banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 100%;
+    background-size: auto;
+}
+
+#seccion-banner {
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+#banner_nav_pestañas {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+
+#banner_nav_pestañas nav{
+   position: relative;
+   background-color: rgba(0, 0, 0, 0.5);
+   min-height: 60px;
+}
+
+#banner_nav_pestañas a{
+   color: white;
+   font-weight: bold;
+}
+
+.uk-navbar-dropdown-nav li a{
+   color: black !important;
+   font-weight: 300 !important;
+}
+
+.flechas-scroll-down{
+    left: 50%;
+                opacity: 0;
+}
+
+@keyframes scrolldown {
+    0%{
+        transform: translateY(20%) rotate(45deg);
+        opacity: 0.7;
+    }
+    50%{
+        transform: translateY(0%) rotate(45deg);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateY(20%) rotate(45deg);
+        opacity: 0.7;
+    }
+}
+
+/*
+==============================
+SECCION CANALES ESPECIALES
+==============================
+*/
+#seccion-canales-especiales {
+    background-color: #fbe6d4;
+
+}
+
+/*
+==============================
+SECCION PROMO CANALES ESPECIALES
+==============================
+*/
+#seccion_promo_canales {
+    background-color: #fbe6d4;
+}
+
+
+/*
+==============================
+SECCION BENEFICIOS
+==============================
+*/
+#seccion-beneficios {
+    background-color: #ffffff;
+}
+
+
+#selectorPildora-seccion-beneficios a {
+    color: #2f2519;
+}
+
+#contenedor-pildoras-seccion-beneficios a {
+    border: none;
+}
+
+#contenedor-pildoras-seccion-beneficios a:hover {
+    background-color: #FF6D33;
+    color: white;
+}
+
+#contenedor-pildoras-seccion-beneficios .uk-subnav-pill .uk-active a {
+    background-color: #FF6D33;
+    color: white;
+    border: none 0px;
+}
+
+.mask1{
+    -webkit-mask-image: radial-gradient(circle at right top, transparent 145px, black 1px);
+}
+
+.mask2{
+    background-color: rgba(0, 0, 0, 0.35);
+    background-image: url('./../assets/images/familia2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius:140px;
+    -webkit-mask-image: radial-gradient(circle at left top, transparent 145px, black 1px);
+}
+
+@media (max-width: 1240px) {
+  .mask1 {
+    -webkit-mask-image: radial-gradient(circle at right top, transparent 110px, black 1px);
+  }
+  .mask2 {
+    -webkit-mask-image: radial-gradient(circle at left top, transparent 110px, black 1px);
+  }
+}
+@media (max-width: 700px) {
+  .mask1 {
+    -webkit-mask-image: radial-gradient(circle at right top, transparent 80px, black 1px);
+  }
+  .mask2 {
+    -webkit-mask-image: radial-gradient(circle at left top, transparent 80px, black 1px);
+  }
+}
+
+.mask-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: initial;
+    height: 100%;
+    justify-content: initial;
+}
+.mask-text-container h4{
+    color: white;
+    margin-top: 5rem;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FF6D33;
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+}
+.mask-text-container  h3{
+    margin-left: auto;
+    color: white;
+    font-size: 28px;
+    margin-right: 20%;
+    margin-top: 2%;
+    font-family: 'Lato', sans-serif;
+}
+
+.mask-text-container  h3 span{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/*
+==============================
+PRECIOS
+==============================
+*/
+#seccion-precios {
+    background-color: white;
+}
+
+.subnav-precios li a{
+    padding-right: 1.4em !important;
+    padding-left: 1.4em !important;
+    padding-top: 1.1em;
+    padding-bottom: 1.1em;
+}
+
+.subnav-precios li a:focus{
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange;
+    padding-right: 1.4em !important;
+    padding-left: 1.4em !important;
+    padding-top: 1.1em;
+    padding-bottom: 1.1em;
+    font-weight: 600;
+}
+
+.subnav-precios li a:hover{
+    color: orange;
+}
+
+#foto-bg-precio{
+    width: 100vw;
+}
+
+/*
+==============================
+LOGO FORMAS DE PAGO
+==============================
+*/
+#seccion-logos-pagos {
+    background-color: #fbe6d4;
+}

@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible"
+					content="IE=edge" />
+		<meta name="viewport"
+					content="width=device-width, initial-scale=1" />
+
+		<title>NiceTV - Televisión satelital</title>
+		<meta name="description"
+					content="Operadora de TV Satelital de Argentina de menor costo y mayor calidad" />
+		<meta name="author"
+					content="Gonzalez Budiño Joaquin" />
+		<meta name="copyright"
+					content="Amacom Media S.R.L" />
+
+		<!-- ICONOS WEB -->
+		<link rel="apple-touch-icon"
+					sizes="180x180"
+					href="./assets/logos/apple-icon-57x57.png" />
+		<link rel="icon"
+					type="image/png"
+					sizes="32x32"
+					href="./assets/logos/apple-icon-57x57.png" />
+		<link rel="icon"
+					type="image/png"
+					sizes="16x16"
+					href="./assets/logos/apple-icon-57x57.png" />
+		<link rel="shortcut icon"
+					href="./assets/images/apple-icon-57x57.png" />
+
+		<!-- UIkit CSS -->
+		<link rel="stylesheet"
+					href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+
+		<!-- UIkit JS -->
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+
+		<!-- FONT AWESOME -->
+		<script defer
+						src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect"
+					href="https://fonts.googleapis.com">
+		<link rel="preconnect"
+					href="https://fonts.gstatic.com"
+					crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+					rel="stylesheet">
+
+		<!-- ESTILOS -->
+		<link rel="stylesheet"
+					href="./css/estilos_general.css"
+					type="text/css" />
+		<link rel="stylesheet"
+					href="./css/estilos_index.css"
+					type="text/css" />
+	</head>
+
+	<body>
+		<!-- PANEL DE NAV. SUPERIOR 1-->
+		<header id="header"
+						class="uk-navbar-container"
+						uk-navbar
+						uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
+			<div class="uk-navbar-left">
+				<a class="uk-navbar-item uk-logo uk-margin-auto-vertical"
+					 href="./index.html">
+					<img alt="logo nicetv"
+							 src="./assets/logos/nice_logo.png"
+							 width="100"
+							 height="60"
+							 style="width: 100px" />
+				</a>
+				<a href="#offcanvas-nav-primary"
+					 uk-toggle
+					 class="uk-navbar-toggle uk-hidden@l"
+					 href="#">
+					<span uk-navbar-toggle-icon></span>
+					<span class="uk-margin-small-left">Menu</span>
+				</a>
+			</div>
+			<div class="uk-navbar-right">
+				<ul id="nav_superior_contacto_numeros"
+						class="uk-navbar-nav uk-visible@l">
+					<li>
+						<a target="_blank"
+							 href="https://api.whatsapp.com/send?phone=541138336858">
+							<span id="icono-whatsapp"
+										class="uk-icon uk-margin-small-right"
+										uk-icon="icon: whatsapp"></span>
+							011-3833-6858
+						</a>
+					</li>
+					<li>
+						<a target="_blank"
+							 href="https://api.whatsapp.com/send?phone=541127667680">
+							<span id="icono-whatsapp"
+										class="uk-icon uk-margin-small-right"
+										uk-icon="icon: whatsapp"></span>
+							011-2766-7680
+						</a>
+					</li>
+				</ul>
+				<div class="uk-navbar-item uk-visible@l">
+					<a href="contacto.html"
+						 class="uk-button uk-button-default uk-box-shadow-medium">Contrata Ya!</a>
+				</div>
+			</div>
+		</header>
+		<!-- FIN PANEL DE NAV. SUPERIOR 1-->
+
+		<!-- PANEL DE NAV. SUPERIOR MOBILE -->
+		<div id="offcanvas-nav-primary"
+				 uk-offcanvas="mode: none; overlay: true">
+			<div id="contenedor_links_mobile"
+					 class="uk-offcanvas-bar uk-flex uk-flex-column"
+					 style="overflow-y: auto">
+				<div class="uk-navbar-item uk-nav-center">
+					<a href="./contacto.html"
+						 class="uk-button uk-button-primary">Contrata Ya!</a>
+				</div>
+
+				<ul class="uk-nav uk-nav-default uk-nav-center uk-margin-auto-vertical uk-list">
+					<li class="uk-nav-divider"></li>
+					<li>
+						<a id="link-navbar-mobile"
+							 href="#seccion-precios"> Paquetes </a>
+					</li>
+					<li>
+						<a id="link-navbar-mobile"
+							 href="#seccion-beneficios"> Beneficios </a>
+					</li>
+					<li>
+						<a id="link-navbar-mobile"
+							 href="#modalReferenciaPago"
+							 uk-toggle>
+							Mi código de pago
+						</a>
+					</li>
+					<li>
+						<a id="link-navbar-mobile"
+							 href="#modalPagos"
+							 uk-toggle> Donde Pagar </a>
+					</li>
+					<li>
+						<a id="link-navbar-mobile"
+							 href="./faq.html"> Dudas frencuentes </a>
+					</li>
+					<li>
+						<a id="link-navbar-mobile"
+							 onclick="changeBenefitsTab()"
+							 href="#seccion-beneficios">
+							Quienes somos
+						</a>
+					</li>
+					<br />
+					<li class="uk-nav-divider"></li>
+				</ul>
+
+				<ul class="uk-list uk-nav-center uk-margin-auto-vertical">
+					<li>
+						<a href="https://api.whatsapp.com/send?phone=541138336858"><span class="link-navbar-mobile uk-icon uk-margin-small-right"
+										uk-icon="icon: receiver"></span>11-3833-6858</a>
+					</li>
+					<br />
+					<li>
+						<a href="https://api.whatsapp.com/send?phone=541127667680"><span class="uk-icon uk-margin-small-right"
+										uk-icon="icon: receiver"></span>11-2766-7680</a>
+					</li>
+					<br />
+				</ul>
+			</div>
+		</div>
+		<!-- FIN PANEL DE NAV. SUPERIOR MOBILE -->
+
+		<!-- BANNER SERVICIO -->
+		<div id="seccion-banner"
+				 class="uk-visible@l"
+				 tabindex="-1"
+				 uk-slideshow="animation: fade;kenburns:true; autoplay: true;autoplay-interval:2000;pauseOnHover:
+             false;ratio: false">
+			<div id="banner_nav_pestañas"
+					 class="uk-visible@l">
+				<!-- PANEL DE NAV. SUPERIOR 2-->
+				<nav uk-navbar>
+					<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav uk-visible@m">
+							<li>
+								<a id="link-navbar-top"
+									 class="uk-button-text"
+									 href="#seccion-precios"
+									 data-uk-scroll="duration: 500">
+									Paquetes
+								</a>
+							</li>
+							<li>
+								<a id="link-navbar-top"
+									 class="uk-button-text"
+									 href="#seccion-beneficios"
+									 data-uk-scroll="duration: 500">
+									Beneficios
+								</a>
+							</li>
+							<li>
+								<a href="#">Soporte & Servicio</a>
+								<div class="uk-navbar-dropdown">
+									<ul class="uk-nav uk-navbar-dropdown-nav">
+										<li>
+											<a class="uk-button-text"
+												 href="#modalReferenciaPago"
+												 uk-toggle>Mi Código de pago</a>
+										</li>
+										<li>
+											<a class="uk-button-text"
+												 href="#modalPagos"
+												 uk-toggle>Dónde pagar</a>
+										</li>
+										<li>
+											<a class="uk-button-text"
+												 href="./faq.html">Dudas más Frecuentes</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="uk-button-text"
+									 onclick="changeBenefitsTab()"
+									 href="#seccion-beneficios"
+									 id="link-navbar-top"
+									 data-uk-scroll="duration: 500">
+									Quienes Somos
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!-- FIN PANEL DE NAV. SUPERIOR 2-->
+			</div>
+
+			<ul id="slideshow_desktop"
+					class="uk-slideshow-items"
+					uk-height-viewport="offset-bottom: 15">
+				<li>
+					<img uk-img
+							 uk-cover
+							 class="img_banner"
+							 src="./assets/images/BANNER_MUESTRA_1.jpg"
+							 alt="banner promocion 2" />
+				</li>
+				<li>
+					<img uk-img
+							 uk-cover
+							 class="img_banner"
+							 src="./assets/images/BANNER_MUESTRA_3.jpg"
+							 alt="banner promocion 3" />
+				</li>
+				<li>
+					<img uk-img
+							 uk-cover
+							 class="img_banner"
+							 src="./assets/images/BANNER_MUESTRA_2.jpg"
+							 alt="banner promocion 4" />
+				</li>
+			</ul>
+
+			<div class="flechas-scroll-down"
+					 style="width: 2em; height: 2em; background-color: transparent; z-index: 80;
+            bottom: 65px; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: antiquewhite; animation: scrolldown 1.2s ease-in-out infinite 0.15s;"></div>
+			<div class="flechas-scroll-down"
+					 style="width: 2em; height: 2em; background-color: transparent; z-index: 80;
+            bottom: 45px; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: antiquewhite; animation: scrolldown 1.2s ease-in-out infinite;"></div>
+
+			<div class="uk-position-bottom-center uk-position-small uk-light">
+				<ul class="uk-dotnav">
+					<li uk-slideshow-item="0"><a href="#">I</a></li>
+					<li uk-slideshow-item="1"><a href="#">I</a></li>
+					<li uk-slideshow-item="2"><a href="#">I</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--FIN BANNER SERVICIO -->
+		<!-- BANNER SERVICIO MOBILE-->
+		<div id="seccion-banner-mobile"
+				 class="uk-hidden@l"
+				 tabindex="-1"
+				 uk-slideshow="animation: fade;kenburns:true; autoplay: true;autoplay-interval:2000;pauseOnHover:
+             false;ratio: false;">
+			<ul id="slideshow_desktop"
+					class="uk-slideshow-items"
+					uk-height-viewport="offset-bottom: 70;">
+				<li>
+					<img uk-img
+							 uk-cover
+							 class="img_banner"
+							 src="./assets/images/BANNER_MUESTRA_1.jpg"
+							 alt="banner promocion 2" />
+				</li>
+				<li>
+					<img uk-img
+							 uk-cover
+							 class="img_banner"
+							 src="./assets/images/BANNER_MUESTRA_3.jpg"
+							 alt="banner promocion 3" />
+				</li>
+				<li>
+					<img uk-img
+							 uk-cover
+							 class="img_banner"
+							 src="./assets/images/BANNER_MUESTRA_2.jpg"
+							 alt="banner promocion 4" />
+				</li>
+			</ul>
+		</div>
+		<!--FIN BANNER SERVICIO -->
+
+		<!-- SECCION BENEFICIOS -->
+		<section id="seccion-beneficios"
+						 class="uk-section uk-section-default uk-margin-small-bottom">
+			<div id="contenedor-pildoras-seccion-beneficios"
+					 class="uk-display-block uk-padding-remove-vertical uk-border-pill">
+				<ul id="selectorPildora-seccion-beneficios"
+						class="uk-subnav uk-subnav-pill uk-flex uk-flex-center"
+						data-uk-switcher="connect: .uk-switcher; animation: uk-animation-fade">
+					<li id="tab_beneficios_beneficio">
+						<a class="uk-border-pill"
+							 href="#">Beneficios</a>
+					</li>
+					<li id="tab_beneficios_comofunciona">
+						<a class="uk-border-pill"
+							 href="#">Porqué Elegirnos</a>
+					</li>
+					<li id="tab_beneficios_acerca">
+						<a class="uk-border-pill"
+							 href="#">Acerca Nuestro</a>
+					</li>
+				</ul>
+			</div>
+
+			<hr id="seccion-beneficios-divisor"
+					class="uk-divider-icon" />
+
+			<ul id="contenido-seccion-beneficios"
+					class="uk-switcher">
+				<li>
+					<div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-padding-small"
+							 uk-grid uk-height-match="target: > div > div; row:false">
+
+							 <div class="uk-width-1-2@m">
+							<div class="mask1"><img
+									 src="./assets/images/beneficio1.jpg"
+									 alt="promocion bienvenida. Dias del mes de instalacion bonificados" /></div>
+						</div>
+
+						<div class="uk-width-1-2@m">
+							<div class="mask2 uk-background-cover uk-cover-container uk-background-bottom-center uk-background-norepeat uk-background-blend-overlay">
+								<div class="mask-text-container">
+									<h4>ABONANDO DEL 1 AL 10 DE CADA MES</h4>
+									<h3><span>35%</span> de descuento</h3>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+				<li>
+					<div class="uk-grid uk-child-width-1@l uk-flex-middle"
+							 data-uk-grid
+							 data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
+						<div class="uk-container uk-align-center">
+							<div class="uk-grid uk-grid-medium uk-child-width-1-3@m"
+									 data-uk-grid
+									 data-uk-scrollspy="target: > div; delay: 150; cls: uk-animation-slide-bottom-medium">
+								<div class="uk-text-center uk-margin-auto">
+									<div class="uk-panel">
+										<img class="lazy uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade"
+												 src="./assets/logos/flaticon/032-customer service agent.png"
+												 data-original="images/how-entrusters-works-boythoughts600.png"
+												 style="height: 100px; display: inline"
+												 alt=""
+												 data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:200}" />
+										<div class="uk-text-center uk-margin"
+												 style="margin-top: 50px">
+											<h2>1. Atención al cliente personalizada</h2>
+											<p>
+												Prestamos mucha atención a las dudas y problemas de
+												los clientes, porque forman parte de nuestra
+												familia.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="uk-text-center">
+									<div class="uk-panel">
+										<img class="lazy uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade"
+												 src="./assets/logos/flaticon/028-EDC.png"
+												 data-original="images/how-entrusters-works-boythoughts600.png"
+												 style="height: 100px; display: inline"
+												 alt=""
+												 data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:200}" />
+										<div class="uk-text-center uk-margin"
+												 style="margin-top: 50px">
+											<h2>2. Varios medios de pago</h2>
+											<p>
+												Nos gusta ser simples y modernos. Facilitamos a
+												nuestros clientes muchas formas y canales de pago,
+												tanto presenciales como online
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="uk-text-center">
+									<div class="uk-panel">
+										<img class="lazy uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade"
+												 src="./assets/logos/flaticon/dron.png"
+												 style="height: 100px; display: inline"
+												 alt=""
+												 data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:200}" />
+										<div class="uk-text-center uk-margin"
+												 style="margin-top: 50px">
+											<h2>3. Grandes distancias</h2>
+											<p>
+												No importa donde te encuentres, vamos a encontrar la
+												manera de llegar hasta allá para ofrecerte nuestros
+												servicios.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="uk-grid-small uk-child-width-expand@s uk-text-center"
+							 uk-grid>
+						<div class="uk-width-1-2@m uk-row-first">
+							<img width="660"
+									 height="400"
+									 src="./assets/images/imagen_espn.jpg"
+									 alt="futbol" />
+						</div>
+
+						<div class="uk-container uk-width-1-2@m">
+							<h1>Una familia unida como un equipo</h1>
+							<p>
+								Somos una operadora de TV Satelital en expasión hacia todo Argentina
+								con el objetivo de ofrecer contenido de calidad al mejor costo. Los
+								grandes logros se hacen en equipo y por eso tus ideas y opiniones
+								juegan un rol importante en nuestras ganas de crecer junto a vos.
+								Apostamos siempre a la mejor tecnología y brindamos una cálida
+								atención en nuestro servicio. Todo esto hace de NiceTV un servicio
+								ideal para usted.
+							</p>
+							<a class="uk-button uk-button-primary"
+								 href="#">CONTRATA YA!</a>
+							<h2>Sabemos lo que querés y lo que más te gusta</h2>
+							<h2>Estamos a tu disposición</h2>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<!-- FIN SECCION BENEFICIOS -->
+
+		<!-- SECCION CANALES ESPECIALES -->
+		<section id="seccion_promo_canales"
+						 class="uk-section uk-section-small uk-section-muted">
+			<h1 class="uk-text-center">CANALES ESPECIALES</h1>
+			<div class="uk-section uk-container">
+				<div class="uk-grid-small uk-child-width-expand@s uk-text-center"
+						 uk-grid>
+					<div class="uk-width-1-3@m">
+						<img width="660"
+								 height="400"
+								 src="./assets/images/imagen_foxseries.jpg"
+								 alt="imagen_foxseries" />
+					</div>
+					<div class="uk-width-1-3@m">
+						<img width="660"
+								 height="400"
+								 src="./assets/images/imagen_paramount.jpg"
+								 alt="imagen_paramount" />
+					</div>
+					<div class="uk-width-1-3@m">
+						<img width="660"
+								 height="400"
+								 src="./assets/images/imagen_discoverychannel.jpg"
+								 alt="imagen_discoverychannel" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FIN SECCION CANALES ESPECIALES -->
+
+		<!-- PRECIO SERVICIO -->
+		<section id="seccion-precios"
+						 class="uk-section uk-section-muted">
+
+			<h1 class="uk-flex uk-flex-center">CONSULTE SU PLAN</h1>
+
+			<div class="uk-position-relative uk-visible-toggle uk-hidden@l" tabindex="-1" uk-slider="center: true; finite: true">
+				<ul class="uk-slider-items uk-grid uk-grid-match" uk-height-viewport="offset-top: true; offset-bottom: 10">
+						<li class="uk-width-2-3">
+								<div class="uk-cover-container">
+										<div class="uk-position-center uk-panel">
+											<h3 class="uk-text-center">1 Decodificador</h3>
+											<dl class="uk-description-list">
+												<dt>PLAN FAMILIA CLÁSICO</dt>
+												<dd>Abonando del 1 al 10 mes en curso: $1200</dd>
+												<dd>Abonando del 11 al 30 mes en curso: $1300</dd>
+												<dt>PLAN FAMILIA + HBO</dt>
+												<dd>Abonando del 1 al 10 mes en curso: $1500</dd>
+												<dd>Abonando del 11 al 30 mes en curso: $1700</dd>
+												<dt>PLAN FAMILIA + FÚTBOL PREMIUM</dt>
+												<dd>Abonando del 1 al 10 mes en curso: $1600</dd>
+												<dd>Abonando del 11 al 30 mes en curso: $1800</dd>
+												<dt>PLAN FAMILIA + ADULTOS</dt>
+												<dd>Abonando del 1 al 10 mes en curso: $1400</dd>
+												<dd>Abonando del 11 al 30 mes en curso: $1600</dd>
+												<dt>PLAN FULL ORO TODO INCLUIDO</dt>
+												<dd>Abonando del 1 al 10 mes en curso: $2100</dd>
+												<dd>Abonando del 11 al 30 mes en curso: $2500</dd>
+										</dl>
+										</div>
+								</div>
+						</li>
+						<li class="uk-width-3-4">
+								<div class="uk-cover-container">
+										<div class="uk-position-center uk-panel">
+											<h3 class="uk-text-center">2 Decodificadores</h3>
+											<dl class="uk-description-list">
+												<dt>PLAN FAMILIA CLÁSICO</dt>
+												<dd>Abonando del 1 al 10 mes en curso: $1700</dd>
+												<dd>Abonando del 11 al 30 mes en curso: $1900</dd>
+												<dt>PLAN FAMILIA + HBO</dt>
+												<dd>Abonando del 1 al 10 mes en curso: $2000</dd>
+												<dd>Abonando del 11 al 30 mes en curso: $2300</dd>
+												<dt>PLAN FAMILIA + FÚTBOL PREMIUM</dt>
+												<dd>Abonando del 1 al 10 mes en curso: $2100</dd>
+												<dd>Abonando del 11 al 30 mes en curso: $2400</dd>
+												<dt>PLAN FAMILIA + ADULTOS</dt>
+												<dd>Abonando del 1 al 10 mes en curso: $1900</dd>
+												<dd>Abonando del 11 al 30 mes en curso: $2200</dd>
+												<dt>PLAN FULL ORO TODO INCLUIDO</dt>
+												<dd>Abonando del 1 al 10 mes en curso: $2600</dd>
+												<dd>Abonando del 11 al 30 mes en curso: $3100</dd>
+										</dl>
+										</div>
+								</div>
+						</li>
+				</ul>
+
+				<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+				<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+		</div>
+
+			<ul class="uk-subnav subnav-precios uk-flex-center uk-visible@l"
+					uk-switcher>
+				<li><a href="#">1 Decodificador</a></li>
+				<li><a href="#">2 Decodificadores</a></li>
+			</ul>
+
+			<ul class="uk-switcher uk-margin uk-visible@l">
+				<li>
+					<div class="uk-inline">
+						<img src="./assets/images/familia1.jpeg"
+								 id="foto-bg-precio"
+								 alt="familia">
+						<div class="uk-overlay-primary uk-position-cover"></div>
+						<div class="uk-overlay uk-position-center uk-light">
+							<div class="uk-grid-small uk-child-width-1-3@m uk-flex-center"
+									 uk-grid>
+								<div>
+									<h4 class="uk-text-center">PLAN FAMILIA CLÁSICO</h4>
+									<div class="uk-flex uk-flex-middle uk-flex-center">
+										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
+											<span style="font-size: 0.5em">$</span>1200
+										</span>
+									</div>
+									<div class="uk-text-small uk-text-center uk-text-muted">Mensual</div>
+								</div>
+								<div>
+									<h4 class="uk-text-center">PLAN FAMILIA + HBO</h4>
+									<div class="uk-flex uk-flex-middle uk-flex-center">
+										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
+											<span style="font-size: 0.5em">$</span>1500
+										</span>
+									</div>
+									<div class="uk-text-small uk-text-center uk-text-muted">Mensual</div>
+								</div>
+								<div>
+									<h4 class="uk-text-center">PLAN FAMILIA + FÚTBOL PREMIUM</h4>
+									<div class="uk-flex uk-flex-middle uk-flex-center">
+										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
+											<span style="font-size: 0.5em">$</span>1600
+										</span>
+									</div>
+									<div class="uk-text-small uk-text-center uk-text-muted uk-text-bold"><span class="uk-badge"
+													style="background-color: transparent; color:white;"><span uk-icon="bolt"></span> MÁS PEDIDO</span></div>
+								</div>
+								<div>
+									<h4 class="uk-text-center">PLAN FAMILIA + ADULTOS</h4>
+									<div class="uk-flex uk-flex-middle uk-flex-center">
+										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
+											<span style="font-size: 0.5em">$</span>1400
+										</span>
+									</div>
+									<div class="uk-text-small uk-text-center uk-text-muted">Mensual</div>
+								</div>
+								<div>
+									<h4 class="uk-text-center">PLAN ORO TODO INCLUIDO</h4>
+									<div class="uk-flex uk-flex-middle uk-flex-center">
+										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
+											<span style="font-size: 0.5em">$</span>2100
+										</span>
+									</div>
+									<div class="uk-text-small uk-text-center uk-text-muted">Mensual</div>
+								</div>
+							</div>
+							<div class="uk-text-center uk-margin-top">
+								<a href="contacto.html"
+									 class="uk-button uk-box-shadow-medium">Contrata Ya!</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="uk-inline">
+						<img src="./assets/images/familia1.jpeg"
+								 id="foto-bg-precio"
+								 alt="familia">
+						<div class="uk-overlay-primary uk-position-cover"></div>
+						<div class="uk-overlay uk-position-center uk-light">
+							<div class="uk-grid-small uk-child-width-1-3@m uk-flex-center"
+									 uk-grid>
+								<div>
+									<h4 class="uk-text-center">PLAN FAMILIA CLÁSICO</h4>
+									<div class="uk-flex uk-flex-middle uk-flex-center">
+										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
+											<span style="font-size: 0.5em">$</span>1700
+										</span>
+									</div>
+									<div class="uk-text-small uk-text-center uk-text-muted">Mensual</div>
+								</div>
+								<div>
+									<h4 class="uk-text-center">PLAN FAMILIA + HBO</h4>
+									<div class="uk-flex uk-flex-middle uk-flex-center">
+										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
+											<span style="font-size: 0.5em">$</span>2000
+										</span>
+									</div>
+									<div class="uk-text-small uk-text-center uk-text-muted">Mensual</div>
+								</div>
+								<div>
+									<h4 class="uk-text-center">PLAN FAMILIA + FÚTBOL PREMIUM</h4>
+									<div class="uk-flex uk-flex-middle uk-flex-center">
+										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
+											<span style="font-size: 0.5em">$</span>2100
+										</span>
+									</div>
+									<div class="uk-text-small uk-text-center uk-text-muted uk-text-bold"><span class="uk-badge"
+													style="background-color: transparent; color:white;"><span uk-icon="bolt"></span> MÁS PEDIDO</span></div>
+								</div>
+								<div>
+									<h4 class="uk-text-center">PLAN FAMILIA + ADULTOS</h4>
+									<div class="uk-flex uk-flex-middle uk-flex-center">
+										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
+											<span style="font-size: 0.5em">$</span>1900
+										</span>
+									</div>
+									<div class="uk-text-small uk-text-center uk-text-muted">Mensual</div>
+								</div>
+								<div>
+									<h4 class="uk-text-center">PLAN ORO TODO INCLUIDO</h4>
+									<div class="uk-flex uk-flex-middle uk-flex-center">
+										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
+											<span style="font-size: 0.5em">$</span>2600
+										</span>
+									</div>
+									<div class="uk-text-small uk-text-center uk-text-muted">Mensual</div>
+								</div>
+							</div>
+							<div class="uk-text-center uk-margin-top">
+								<a href="contacto.html"
+									 class="uk-button uk-box-shadow-medium">Contrata Ya!</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<div class="uk-container uk-container-small uk-visible@l">
+				<div class="uk-card uk-card-default uk-border-circle">
+					<div class="uk-card-media-top">
+						<img src="./assets/images/extrapaquete.jpeg"
+								 alt="extra paquete" />
+					</div>
+				</div>
+
+				<div class="uk-container uk-container-small uk-grid-margin">
+					<p class="uk-text-small uk-text-light uk-text-italic uk-text-muted uk-text-justify">
+						Los precios descriptos en la tabla superior corresponden a precios bonificados
+						del servicio Abonando entre los dias 1 al 10 de cada mes o por suscripción al
+						débito automatico. Pasado el 10, se pierde el descuento correspondiente a un 35%
+						sobre la tarifa plena. Además, los precios que se
+						muestran arriba no contemplan costos incurridos de instalaciones, cambios de
+						domicilio, rehabilitaciones de servicio,etc. Por todo lo mencionado y para mayor
+						entendimiento, es importante que lea los términos y condiciones que figuran al
+						final de este sitio web, asimismo también consultar por teléfono o whatsapp ante
+						cualquier duda.
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- FIN PRECIO SERVICIO -->
+
+		<!-- MODAL DE PRECIOS -->
+		<div id="modalPrecios"
+				 class="uk-modal-container"
+				 uk-modal>
+			<div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+				<h2 class="uk-modal-title">BENEFICIOS Y DETALLES</h2>
+				<p>Se muestran los beneficios obtenidos y precios de servicios extras</p>
+				<img class="uk-align-center"
+						 src="./assets/images/tabla_precios.JPG"
+						 alt="tabla de precios" />
+
+				<p class="uk-text-right">
+					<button class="uk-button uk-button-default uk-modal-close uk-box-shadow-hover-small">
+						Cancelar
+					</button>
+				</p>
+			</div>
+		</div>
+		<!-- FIN MODAL DE PRECIOS -->
+
+		<!-- MODAL DONDE PAGAR -->
+		<div id="modalPagos"
+				 class="uk-modal-full"
+				 uk-modal>
+			<div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+				<button class="uk-modal-close-full uk-close-large"
+								type="button"
+								uk-close></button>
+				<h2 class="uk-modal-title">Medios de pago de NiceTV</h2>
+				<div uk-grid>
+					<div class="uk-width-auto@m">
+						<ul id="tab_modal_dondePagar"
+								class="uk-tab-left"
+								uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+							<li>
+								<a id="modal_dondePagar_opcion1"
+									 href="#">Online por internet</a>
+							</li>
+							<li><a id="modal_dondePagar_opcion2"
+									 href="#">Pago Fácil</a></li>
+							<li><a id="modal_dondePagar_opcion3"
+									 href="#">Débito Automático</a></li>
+							<li><a id="modal_dondePagar_opcion4"
+									 href="#">Nuestras oficinas</a></li>
+						</ul>
+					</div>
+					<div class="uk-width-expand@m">
+						<ul id="component-tab-left"
+								class="uk-switcher">
+							<li>
+								<dl class="uk-description-list">
+									<dt>
+										<h4>Plataforma web</h4>
+									</dt>
+									<dd>
+										<p>Opciones: MercadoPago y Tarjetas de Débito o Crédito</p>
+										<ol>
+											<li>
+												Dirigirse al sitio:
+												<a href="www.pagos.nicetv.com.ar"
+													 target="_blank">www.pagos.nicetv.com.ar</a>
+											</li>
+											<li>
+												Ingresa con su cuenta de Facebook, Google o se
+												registra para ingresar con su DNI
+											</li>
+											<li>
+												Agregue su cuenta ingresando su código de referencia
+												de pago con la opcion "Agregar Cuenta"
+											</li>
+										</ol>
+									</dd>
+									<dt>
+										<h4>Pago mis Cuentas</h4>
+									</dt>
+									<dd>
+										<p>
+											Ingresar OPCIÓN BANCO (Empresa NICETV) e ingrese luego
+											su código de referencia de pago.
+										</p>
+									</dd>
+								</dl>
+								<span class="uk-text-small uk-text-italic">¿No sabe su código de referencia de pago?
+									<a href="#"
+										 onclick="closeModalDondePagar()">Consulte aquí</a></span>
+							</li>
+							<li>
+								<p>
+									Cualquier sucursal de pago Fácil esta habilitada y no se cobra
+									ninguna comisión extra
+								</p>
+								<ol>
+									<li>
+										Dirigirse a cualquier oficina e informe que desea pagar el
+										servicio de televisión NICETV
+									</li>
+									<li>informe al cobrador su código de referencia de pago</li>
+									<li>
+										Verifique que el monto a pagar y los datos del titular del
+										servicio sean los correcto. No se cobran comisiones extras
+									</li>
+									<li>
+										Una vez que realizó un pago, verifique que los datos de su
+										ticket sean los correctos.
+									</li>
+								</ol>
+								<p>
+									<span class="uk-text-small uk-text-italic">¿No sabe su código de referencia de pago?
+										<a href="#"
+											 onclick="closeModalDondePagar()">Consulte aquí</a></span>
+								</p>
+							</li>
+							<li>
+								<ul>
+									<li>
+										Debe completar un formulario de adhesión al Débito
+										Automático con tarjeta de crédito en alguna de nuestras
+										oficinas comerciales.
+										<span><a class="uk-text-small uk-text-italic"
+												 onclick="changePaymentModalTab(3,'modal_dondePagar_opcion4')"
+												 href="#">Consulte aquí cuáles son nuestras oficinas</a></span>
+									</li>
+									<li>
+										También puede adherirse al Débito Automático a través del
+										servicio de MercadoPago.
+									</li>
+									<p>
+										<span class="uk-text-small uk-text-italic">
+											Solicitar asistencia al servicio de atención al cliente
+											al teléfono 011-27667680
+										</span>
+									</p>
+								</ul>
+							</li>
+							<li>
+								<div>
+									<h5>
+										Puede pagar de forma presencial en cualquiera de nuestras
+										oficinas
+									</h5>
+									<ul class="uk-list uk-list-disc">
+										<li>San Martin 1143 - Formosa</li>
+										<li>Sarmiento 737 - Formosa</li>
+										<li>Av. Nestor Kirchner 4900 - Formosa</li>
+										<li>Av. Maradona 1773 - Formosa</li>
+										<li>Av. Senador Tomas 2553 - Formosa</li>
+										<li>Av. San Martin 941 - Clorinda</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN MODAL DONDE PAGAR -->
+
+		<!-- MODAL MI REFERENCIA DE PAGO -->
+		<div id="modalReferenciaPago"
+				 class="uk-flex-top uk-modal-container"
+				 uk-modal>
+			<div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+				<button class="uk-modal-close-full uk-close-large"
+								type="button"
+								uk-close></button>
+				<h3 class="uk-modal-title">Solicitar código de referencia de pago</h3>
+				<p class="uk-margin">
+					Complete el siguiente formulario con los <u>datos del titular</u> de la cuenta.
+					Se generará un mensaje de WhatsApp que deberá enviar para recibir su código de
+					referencia de pago
+				</p>
+				<form onsubmit="mi_referencia_pago()">
+					<div class="uk-grid uk-margin">
+						<div class="uk-width-1-1@s uk-margin">
+							<label class="input_modalReferencia_nombre"
+										 for="form-stacked-text">Nombre y Apellido del titular</label>
+							<div class="uk-form-controls">
+								<input class="uk-input"
+											 id="input_modalReferencia_nombre"
+											 name="input_modalReferencia_nombre"
+											 type="text"
+											 required />
+							</div>
+						</div>
+						<div class="uk-width-1-3@s uk-margin">
+							<label class="input_modalReferencia_dni"
+										 for="form-stacked-text">DNI del titular</label>
+							<div class="uk-form-controls">
+								<input class="uk-input"
+											 id="input_modalReferencia_dni"
+											 name="input_modalReferencia_dni"
+											 type="number"
+											 maxlength="12"
+											 minlength="8"
+											 required />
+							</div>
+						</div>
+						<div class="uk-width-1-3@s uk-margin">
+							<label class="input_modalReferencia_email"
+										 for="form-stacked-text">Email del titular</label>
+							<div class="uk-form-controls">
+								<input class="uk-input"
+											 id="input_modalReferencia_email"
+											 name="input_modalReferencia_email"
+											 type="email"
+											 maxlength="50"
+											 minlength="10" />
+							</div>
+						</div>
+						<div class="uk-width-1-3@s uk-margin">
+							<label class="input_modalReferencia_telefono"
+										 for="form-stacked-text">teléfono del titular</label>
+							<div class="uk-form-controls">
+								<input class="uk-input"
+											 id="input_modalReferencia_telefono"
+											 name="input_modalReferencia_telefono"
+											 type="tel"
+											 maxlength="15"
+											 minlength="10" />
+							</div>
+						</div>
+					</div>
+					<p class="uk-text-right uk-margin">
+						<button class="uk-button uk-button-text uk-modal-close"
+										style="color: black; background-color: white; border: n: ;one;"
+										type="button">
+							Cancel
+						</button>
+						<button class="uk-button uk-button-primary"
+										type="submit">Consultar</button>
+					</p>
+				</form>
+			</div>
+		</div>
+		<!-- FIN MODAL MI REFERENCIA DE PAGO -->
+
+		<!-- LOGOS FORMAS DE PAGO-->
+		<div id="seccion-logos-pagos"
+				 class="uk-section uk-section-small uk-section-muted">
+			<div class="uk-container uk-container-small">
+				<div class="uk-grid uk-child-width-1-4 uk-child-width-expand@m logos-grid uk-flex uk-flex-center uk-flex-middle"
+						 data-uk-grid
+						 data-uk-scrollspy="cls: uk-animation-scale-up; target: > div > img; delay: 100">
+					<div>
+						<img src=""
+								 data-src="./assets/logos/logo_mercadopago.png"
+								 width="120"
+								 height="60"
+								 data-uk-img
+								 alt="logo_mercadopago" />
+					</div>
+					<div>
+						<img src=""
+								 data-src="./assets/logos/logo_pagofacil.png"
+								 width="120"
+								 height="60"
+								 data-uk-img
+								 alt="logo_pagofacil" />
+					</div>
+					<div>
+						<img src=""
+								 data-src="./assets/logos/logo_pagomiscuentas.png"
+								 width="120"
+								 height="60"
+								 data-uk-img
+								 alt="logo_pagomiscuentas" />
+					</div>
+					<div>
+						<img src=""
+								 data-src="./assets/logos/logo_visa.png"
+								 width="120"
+								 height="60"
+								 data-uk-img
+								 alt="logo_visa" />
+					</div>
+					<div>
+						<img src=""
+								 data-src="./assets/logos/logo_mastercard.png"
+								 width="120"
+								 height="60"
+								 data-uk-img
+								 alt="logo_mastercard" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN LOGOS FORMAS DE PAGO-->
+
+		<!-- FOOTER -->
+		<footer id="piepagina"
+						class="uk-section uk-section-secondary uk-padding-remove-bottom">
+			<div class="uk-container">
+				<div class="uk-grid uk-grid-medium"
+						 data-uk-grid>
+					<div class="uk-width-1-4@m">
+						<h5>NUESTRA COMPAÑIA</h5>
+						<p>
+							Somos una operadora de TV Satelital en expasión hacia todo Argentina con
+							el objetivo de ofrecer un basto contenido al menor costo y la mejor
+							calidad siempre. La tecnología de sus dispositivos y la cálida atención
+							de su soporte técnico hace de NiceTV un servicio ideal para usted.
+							<br />
+							<br />
+							<span class="uk-icon uk-margin-small-right"
+										uk-icon="icon: forward"></span>Véase nuestros <a href="./Terms_Conds.html">Términos y Condiciones</a>
+						</p>
+
+						<div>
+							<a style="color: #3b5998"
+								 target="_blank"
+								 href="https://www.facebook.com/nicetvar"
+								 class="icono-social-footer uk-icon-button"
+								 data-uk-icon="facebook"></a>
+							<a style="color: #3f729b"
+								 target="_blank"
+								 href="https://www.instagram.com/nicetvar/"
+								 class="icono-social-footer uk-icon-button"
+								 data-uk-icon="instagram"></a>
+						</div>
+					</div>
+					<div class="uk-width-1-4@m">
+						<h5>TRABAJE CON NOSOTROS</h5>
+						<p>
+							Esta familia está creciendo y te necesitamos con nosotros. Visita
+							nuestra sección de ofertas laborales
+						</p>
+						<br />
+						<a href="./trabajo.html"><span class="uk-icon uk-margin-small-right"
+										uk-icon="icon: forward"></span>Ofertas Laborales</a>
+					</div>
+					<div class="uk-width-1-4@m">
+						<h5>ATENCIÓN AL CLIENTE</h5>
+						<ul class="uk-list">
+							<li>
+								<span class="uk-icon uk-margin-small-right"
+											uk-icon="icon: receiver"></span>11-2766-7680
+							</li>
+							<li>
+								<span class="uk-icon uk-margin-small-right"
+											uk-icon="icon: receiver"></span>11-3833-6858
+							</li>
+						</ul>
+					</div>
+					<div class="uk-width-1-4@m">
+						<h5>NUESTRAS OFICINAS</h5>
+						<ul class="uk-list uk-list-disc">
+							<li>San Martin 1143 - Formosa</li>
+							<li>Sarmiento 737 - Formosa</li>
+							<li>Av. Nestor Kirchner 4900 - Formosa</li>
+							<li>Av. Maradona 1773 - Formosa</li>
+							<li>Av. Senador Tomas 2553 - Formosa</li>
+							<li>Av. San Martin 941 - Clorinda</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="uk-text-center uk-padding uk-padding-remove-horizontal">
+				<span class="uk-text-small uk-text-muted">© 2021 NiceTV</span>
+			</div>
+		</footer>
+		<!-- FIN FOOTER -->
+
+		<!-- SCRIPTS -->
+		<script src="./js/scripts_index.js"></script>
+		<script src="./js/scripts_generales.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+						integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+						crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+						integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+						crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/color/jquery.color-2.2.0.js"
+						integrity="sha256-gvMJWDHjgDrVSiN6eBI9h7dRfQmsTTsGU/eTT8vpzNg="
+						crossorigin="anonymous"></script>
+		<!-- FIN SCRIPTS -->
+	</body>
+
+</html>

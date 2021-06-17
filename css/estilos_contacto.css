@@ -1,0 +1,36 @@
+/*
+==============================
+TOP NAVBAR HEADER
+==============================
+*/
+#header li a {
+    color: white;
+    font-weight: bold;
+}
+
+#header .uk-navbar-dropdown a {
+    color: black;
+    font-weight: 300;
+}
+
+#navbar_top {
+    background-color: #040e1a;
+    padding: 25px;
+    transition: height 0.3s, padding 0.3s linear;
+
+    &.small {
+        height: 46px;
+        padding: 10px;
+    }
+}
+
+
+#navbar_top li a {
+    color: white;
+    font-weight: bold;
+}
+
+#navbar_top .uk-navbar-dropdown a {
+    color: black;
+    font-weight: 300;
+}
